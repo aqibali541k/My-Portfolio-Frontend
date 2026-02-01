@@ -7,6 +7,7 @@ import {
   MenuOutlined,
   UserOutlined,
   ArrowLeftOutlined,
+  HomeOutlined,
 } from "@ant-design/icons";
 import { Link, useLocation } from "react-router-dom";
 import { useTabContext } from "../../../../context/TabContext";
@@ -49,9 +50,9 @@ const Sider = () => {
 
   return (
     <div
-      className={`fixed top-0 bottom-0 left-0 z-50 text-white shadow-lg
-      bg-gradient-to-br from-blue-600 to-blue-400 transition-all duration-300
-      ${isSiderOpen ? "w-60" : "w-16"}`}
+      className={`fixed! top-0 bottom-0 left-0 z-50 text-white shadow-lg
+        bg-gradient-to-br! from-blue-600 to-blue-400 transition-all duration-300
+        ${isSiderOpen ? "w-60" : "w-16"}`}
     >
       {/* TOP */}
       <div className="flex items-center justify-between p-3 border-b border-white/20">
@@ -119,7 +120,7 @@ const Sider = () => {
             bg-white text-black rounded-lg shadow-md
             hover:scale-110 transition"
           >
-            <ArrowLeftOutlined />
+            <HomeOutlined />
           </Link>
         </div>
       )}

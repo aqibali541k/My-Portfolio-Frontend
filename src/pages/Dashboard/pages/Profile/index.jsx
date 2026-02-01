@@ -96,7 +96,7 @@ const Profile = () => {
 
   /* ================= UI ================= */
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-100 via-white to-yellow-100 px-3 sm:px-6 py-6">
+    <div className="min-h-screen bg-gradient-to-r from-blue-100 via-white to-yellow-100 px-1 sm:py-2">
       {/* LOADER */}
       {isLoading && (
         <div className="fixed inset-0 bg-white/60 z-50 flex items-center justify-center">

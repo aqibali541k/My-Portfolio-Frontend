@@ -37,7 +37,7 @@ const ManageProjects = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 px-3 sm:px-6 py-6">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 px-1 sm:px-0 py-2">
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
         <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">

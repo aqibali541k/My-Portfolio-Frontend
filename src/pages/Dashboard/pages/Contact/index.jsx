@@ -28,7 +28,7 @@ const AdminContacts = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 px-3 sm:px-6 py-6">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 px-1 sm:px-2 py-2">
       <div className="mx-auto max-w-6xl">
         {/* HEADER */}
         <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">

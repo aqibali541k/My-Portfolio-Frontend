@@ -6,7 +6,8 @@ const Header = () => {
   const { handleLogout } = useAuthContext();
 
   return (
-    <header className="flex items-center justify-between bg-white shadow-md px-4 py-3 sticky top-0 z-40">
+    <header className="flex items-center justify-between bg-white shadow-md px-4 py-3 top-0">
+      {/* <p>MENU</p> */}
       {/* Title (Always Centered) */}
       <h2 className="absolute left-1/2 transform -translate-x-1/2 text-base sm:text-xl md:text-2xl font-bold flex items-center gap-2 text-gray-800">
         <UserOutlined className="text-blue-600" />

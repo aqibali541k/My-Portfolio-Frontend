@@ -1,11 +1,92 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- BASIC -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Aqib Shabbir | MERN Stack Developer Portfolio</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    <!-- SEO META TAGS -->
+    <meta
+      name="description"
+      content="Aqib Shabbir – MERN Stack Developer. Explore my portfolio, projects, skills, and contact me for web development work."
+    />
+
+    <meta
+      name="keywords"
+      content="Aqib Shabbir, AqibStack, MERN Stack Developer, React Developer, Portfolio Website, JavaScript Developer, Pakistan Developer"
+    />
+
+    <meta name="author" content="Aqib Shabbir " />
+
+    <!-- ROBOTS -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://aqibstack-portfolio.vercel.app/" />
+
+    <!-- OPEN GRAPH (FACEBOOK / LINKEDIN) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Aqib Shabbir | MERN Stack Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Professional MERN Stack Developer. View my projects, skills and contact me for collaboration."
+    />
+    <meta property="og:url" content="https://aqibstack-portfolio.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://aqibstack-portfolio.vercel.app/og-image.png"
+    />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aqib Shabbir | Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="MERN Stack Developer – Explore my professional portfolio."
+    />
+    <meta
+      name="twitter:image"
+      content="https://aqibstack-portfolio.vercel.app/og-image.png"
+    />
+
+    <!-- GOOGLE ANALYTICS -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXX");
+    </script>
+
+    <!-- STRUCTURED DATA (GOOGLE RICH RESULTS) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aqib Shabbir",
+        "url": "https://aqibstack-portfolio.vercel.app/",
+        "sameAs": ["https://github.com/", "https://www.linkedin.com/"],
+        "jobTitle": "MERN Stack Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelancer"
+        }
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

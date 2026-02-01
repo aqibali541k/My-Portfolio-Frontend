@@ -99,7 +99,7 @@ const CreateProject = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 px-3 sm:px-0 py-6">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 px-1 sm:px-0 py-2">
       <div className="mx-auto max-w-4xl bg-white rounded-3xl shadow-xl p-5 sm:p-10 border border-gray-100">
         {/* HEADER */}
         <div className="mb-8">
