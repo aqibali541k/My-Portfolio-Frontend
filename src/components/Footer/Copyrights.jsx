@@ -25,11 +25,14 @@ const Copyrights = () => {
       <div className="max-w-7xl mx-auto grid gap-14 md:grid-cols-3">
         {/* 🧑‍💻 Brand */}
         <div>
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3 mb-4 cursor-pointer">
             <div className="p-3 rounded-xl bg-gradient-to-br from-cyan-400 to-green-400 shadow-lg">
               <FaCode className="text-white text-xl" />
             </div>
-            <h1 className="text-2xl font-extrabold text-white tracking-wide">
+            <h1
+              onClick={() => handleScroll("home")}
+              className="text-2xl font-extrabold text-white tracking-wide"
+            >
               Aqib<span className="text-cyan-400">Stack</span>
             </h1>
           </div>
@@ -49,7 +52,7 @@ const Copyrights = () => {
               <li key={link}>
                 <button
                   onClick={() => handleScroll(link)}
-                  className="relative text-gray-400 hover:text-cyan-400 transition duration-300 hover-animation"
+                  className="relative cursor-pointer text-gray-400 hover:text-cyan-400 transition duration-300 hover-animation"
                 >
                   {link}
                 </button>
@@ -72,7 +75,7 @@ const Copyrights = () => {
               },
               {
                 icon: <FaLinkedin />,
-                link: "https://linkedin.com/in/aqibshabbir",
+                link: "https://linkedin.com/in/aqib-shabbir-62a16a345",
               },
               {
                 icon: <FaTwitter />,
@@ -80,7 +83,7 @@ const Copyrights = () => {
               },
               {
                 icon: <FaEnvelope />,
-                link: "mailto:youremail@gmail.com",
+                link: "mailto:aqibali541k@gmail.com",
               },
             ].map((item, i) => (
               <a
