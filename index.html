@@ -14,21 +14,18 @@
       name="description"
       content="Aqib Shabbir – MERN Stack Developer. Explore my portfolio, projects, skills, and contact me for web development work."
     />
-
     <meta
       name="keywords"
       content="Aqib Shabbir, AqibStack, MERN Stack Developer, React Developer, Portfolio Website, JavaScript Developer, Pakistan Developer"
     />
-
-    <meta name="author" content="Aqib Shabbir " />
+    <meta name="author" content="Aqib Shabbir" />
+    <meta name="robots" content="index, follow" />
 
     <!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
     <meta
       name="google-site-verification"
       content="rO8PJ02uWEjkxBzv_BWVFbeaK83vg2kCORJGLS_4zUI"
     />
-    <!-- ROBOTS -->
-    <meta name="robots" content="index, follow" />
 
     <!-- CANONICAL -->
     <link rel="canonical" href="https://aqibstack-portfolio.vercel.app/" />
@@ -46,7 +43,7 @@
     <meta property="og:url" content="https://aqibstack-portfolio.vercel.app/" />
     <meta
       property="og:image"
-      content="https://aqibstack-portfolio.vercel.app/og-image.png"
+      content="https://aqibstack-portfolio.vercel.app/logo.png"
     />
 
     <!-- TWITTER -->
@@ -58,13 +55,13 @@
     />
     <meta
       name="twitter:image"
-      content="https://aqibstack-portfolio.vercel.app/og-image.png"
+      content="https://aqibstack-portfolio.vercel.app/logo.png"
     />
 
-    <!-- GOOGLE ANALYTICS -->
+    <!-- GOOGLE ANALYTICS (GA4) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+      src="https://www.googletagmanager.com/gtag/js?id=G-7D66MN84DY"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -72,17 +69,31 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "G-XXXXXXX");
+      gtag("config", "G-7D66MN84DY");
     </script>
 
-    <!-- STRUCTURED DATA (GOOGLE RICH RESULTS) -->
+    <!-- STRUCTURED DATA FOR GOOGLE SEARCH / LOGO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Aqib Shabbir Portfolio",
+        "url": "https://aqibstack-portfolio.vercel.app/",
+        "logo": "https://aqibstack-portfolio.vercel.app/logo.png"
+      }
+    </script>
+
+    <!-- OPTIONAL: Person JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Aqib Shabbir",
         "url": "https://aqibstack-portfolio.vercel.app/",
-        "sameAs": ["https://github.com/", "https://www.linkedin.com/"],
+        "sameAs": [
+          "https://github.com/your-github",
+          "https://www.linkedin.com/in/your-linkedin"
+        ],
         "jobTitle": "MERN Stack Developer",
         "worksFor": {
           "@type": "Organization",
