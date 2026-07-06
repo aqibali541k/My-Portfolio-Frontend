@@ -5,8 +5,13 @@ import {
   SiReact, SiRedux, SiTailwindcss,
   SiNodedotjs, SiExpress, SiMongodb,
   SiGit, SiGithub, SiFirebase,
+  SiBootstrap,
+  SiVercel,
+  SiSourceforge,
 } from "react-icons/si";
-import { FaServer } from "react-icons/fa";
+import { FaCloudUploadAlt, FaPlug } from "react-icons/fa";
+import { SiSupabase, SiMysql } from "react-icons/si";
+
 
 const CATEGORIES = ["All", "Frontend", "Backend", "Database", "DevOps"];
 
@@ -19,17 +24,26 @@ const SKILLS = [
   { name: "React.js", level: 72, icon: <SiReact className="text-[#61DAFB]" />, cat: "Frontend" },
   { name: "Redux Toolkit", level: 65, icon: <SiRedux className="text-[#764ABC]" />, cat: "Frontend" },
   { name: "Tailwind CSS", level: 75, icon: <SiTailwindcss className="text-[#06B6D4]" />, cat: "Frontend" },
+  { name: "Bootstrap", level: 75, icon: <SiBootstrap className="text-[#06B6D4]" />, cat: "Frontend" },
   // Backend
   { name: "Node.js", level: 68, icon: <SiNodedotjs className="text-[#339933]" />, cat: "Backend" },
   { name: "Express.js", level: 70, icon: <SiExpress className="text-primary-text transition-colors duration-300" />, cat: "Backend" },
-  { name: "REST APIs", level: 72, icon: <FaServer className="text-[#6366F1]" />, cat: "Backend" },
+  { name: "REST APIs", level: 72, icon: <FaPlug className="text-[#6366F1]" />, cat: "Backend" },
   // Database
+  { name: "Supabase", level: 60, icon: <SiSupabase className="text-[#6366F1]" />, cat: "Database" },
+  { name: "MySQL", level: 60, icon: <SiMysql className="text-[#6366F1]" />, cat: "Database" },
   { name: "MongoDB", level: 68, icon: <SiMongodb className="text-[#47A248]" />, cat: "Database" },
   { name: "Firebase", level: 60, icon: <SiFirebase className="text-[#FFCA28]" />, cat: "Database" },
   // DevOps
   { name: "Git", level: 75, icon: <SiGit className="text-[#F05032]" />, cat: "DevOps" },
   { name: "GitHub", level: 70, icon: <SiGithub className="text-primary-text transition-colors duration-300" />, cat: "DevOps" },
-];
+  { name: "Vercel", level: 85, icon: <SiVercel className="text-primary-text transition-colors duration-300" />, cat: "DevOps" },
+  {
+    name: "Surge",
+    level: 80,
+    icon: <FaCloudUploadAlt className="text-[#37dfd7]" />,
+    cat: "DevOps",
+  },];
 
 const BAR_COLORS = {
   Frontend: "from-[#6366F1] to-[#818CF8]",
@@ -67,8 +81,8 @@ const Skills = () => {
               key={cat}
               onClick={() => setActive(cat)}
               className={`px-4 py-2 rounded-full text-xs font-semibold tracking-wide border transition-all duration-200 cursor-pointer ${active === cat
-                  ? "bg-primary-blue border-primary-blue text-white"
-                  : "bg-card-bg border-border-custom text-secondary-text hover:border-primary-blue/40 hover:text-primary-text"
+                ? "bg-primary-blue border-primary-blue text-white"
+                : "bg-card-bg border-border-custom text-secondary-text hover:border-primary-blue/40 hover:text-primary-text"
                 }`}
             >
               {cat}

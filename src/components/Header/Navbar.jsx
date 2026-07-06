@@ -13,7 +13,7 @@ const NAV = [
   { name: "Projects", id: "projects" },
   { name: "Experience", id: "experience" },
   { name: "Education", id: "education" },
-  { name: "Certifications", id: "certifications" },
+  // { name: "Certifications", id: "certifications" },
   { name: "Blog", id: "blog" },
   { name: "Contact", id: "contact" },
 ];
