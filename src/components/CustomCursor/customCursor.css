@@ -1,0 +1,112 @@
+/* Hide default cursor on desktop */
+
+/* @media (pointer: fine) {
+
+  html,
+  body,
+  * {
+    cursor: auto !important;
+  }
+} */
+
+/* Restore default cursor on touch devices */
+
+@media (pointer: coarse) {
+
+  html,
+  body,
+  * {
+    cursor: auto !important;
+  }
+}
+
+/* ===========================
+      Cursor Dot
+=========================== */
+
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+
+  background: var(--primary-color, #3b82f6);
+
+  pointer-events: none;
+  z-index: 999999;
+
+  left: 0;
+  top: 0;
+
+  will-change: transform;
+}
+
+/* ===========================
+      Cursor Ring
+=========================== */
+
+.cursor-ring {
+  position: fixed;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 9999px;
+
+  border: 1.5px solid rgba(59, 130, 246, 0.55);
+
+  background: rgba(59, 130, 246, 0.08);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  pointer-events: none;
+
+  z-index: 999998;
+
+  will-change: transform;
+
+  transition:
+    width .25s ease,
+    height .25s ease,
+    border-color .25s ease,
+    background .25s ease,
+    box-shadow .25s ease;
+}
+
+/* ===========================
+        Hover State
+=========================== */
+
+.cursor-ring.is-hovering {
+
+  border-color: rgba(59, 130, 246, .95);
+
+  background: rgba(59, 130, 246, .15);
+
+  box-shadow:
+    0 0 20px rgba(59, 130, 246, .35),
+    0 0 45px rgba(59, 130, 246, .20);
+}
+
+/* ===========================
+      Smooth Rendering
+=========================== */
+
+.cursor-dot,
+.cursor-ring {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* ===========================
+      Reduce Motion
+=========================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+}

@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  /* Dynamic Backgrounds */
+  --color-primary-bg: var(--bg-primary);
+  --color-secondary-bg: var(--bg-surface);
+  --color-section-bg: var(--bg-surface);
+  /* Keep alias for backward compatibility */
+  --color-card-bg: var(--bg-card);
+  --color-glass: var(--glass-bg);
+
+  /* Dynamic Borders */
+  --color-border-custom: var(--border-color);
+  --color-border-hover: var(--border-hover);
+
+  /* Dynamic Text */
+  --color-primary-text: var(--text-primary);
+  --color-secondary-text: var(--text-secondary);
+  --color-muted-text: var(--text-muted);
+
+  /* Dynamic Accents */
+  --color-primary-blue: var(--color-primary);
+  --color-hover-blue: var(--color-primary-hover);
+  --color-purple: var(--color-accent);
+  --color-orange: #F97316;
+  --color-green: #22C55E;
+
+  /* Shadows */
+  --shadow-card: var(--shadow-card);
+  --shadow-glow: var(--shadow-glow);
+
+  --radius: 18px;
+}
+
+:root {
+  /* Light Theme */
+  --bg-primary: #FFFFFF;
+  --bg-surface: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --glass-bg: rgba(0, 0, 0, 0.03);
+
+  --border-color: #E5E7EB;
+  --border-hover: #D1D5DB;
+
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-accent: #7C3AED;
+
+  --shadow-card: 0 8px 40px rgba(0, 0, 0, 0.08);
+  --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.15);
+}
+
+[data-theme='dark'] {
+  /* Dark Theme - Figma Mode */
+  --bg-primary: #0A0F1C;
+  --bg-surface: #111827;
+  /* slightly lighter navy */
+  --bg-card: #151E32;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+
+  --border-color: #1E293B;
+  --border-hover: #334155;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+
+  --color-primary: #6366F1;
+  /* Indigo */
+  --color-primary-hover: #818CF8;
+  --color-accent: #38BDF8;
+  /* Sky Blue */
+
+  --shadow-card: 0 8px 40px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 60px rgba(99, 102, 241, 0.15);
+}
+
+/* Minimal spinner */
+.loader {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid var(--text-primary);
+  border-right-color: transparent;
+  box-sizing: border-box;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans, system-ui);
+  font-feature-settings: 'ss01', 'cv01', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
