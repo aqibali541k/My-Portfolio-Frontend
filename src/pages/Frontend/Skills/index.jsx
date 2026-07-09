@@ -20,9 +20,9 @@ const SKILLS = [
   { name: "HTML5", level: 95, icon: <SiHtml5 className="text-[#E34F26]" />, cat: "Frontend" },
   { name: "CSS3", level: 90, icon: <SiCss3 className="text-[#1572B6]" />, cat: "Frontend" },
   { name: "JavaScript", level: 70, icon: <SiJavascript className="text-[#F7DF1E]" />, cat: "Frontend" },
-  { name: "TypeScript", level: 65, icon: <SiTypescript className="text-[#3178C6]" />, cat: "Frontend" },
+  // { name: "TypeScript", level: 65, icon: <SiTypescript className="text-[#3178C6]" />, cat: "Frontend" },
   { name: "React.js", level: 72, icon: <SiReact className="text-[#61DAFB]" />, cat: "Frontend" },
-  { name: "Redux Toolkit", level: 65, icon: <SiRedux className="text-[#764ABC]" />, cat: "Frontend" },
+  // { name: "Redux Toolkit", level: 65, icon: <SiRedux className="text-[#764ABC]" />, cat: "Frontend" },
   { name: "Tailwind CSS", level: 75, icon: <SiTailwindcss className="text-[#06B6D4]" />, cat: "Frontend" },
   { name: "Bootstrap", level: 75, icon: <SiBootstrap className="text-[#06B6D4]" />, cat: "Frontend" },
   // Backend
