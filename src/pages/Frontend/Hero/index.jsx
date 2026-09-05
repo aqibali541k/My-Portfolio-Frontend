@@ -182,7 +182,7 @@ const Hero = () => {
           <p className="mt-6 text-base sm:text-lg text-secondary-text leading-relaxed max-w-xl transition-colors duration-300">
             I am a MERN Stack Developer passionate about building scalable, responsive, and modern web applications.
             I enjoy solving real-world problems using React.js, Node.js, Express.js, and MongoDB.
-            Currently looking for internship and junior developer opportunities.
+            Currently looking for junior developer opportunities.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
